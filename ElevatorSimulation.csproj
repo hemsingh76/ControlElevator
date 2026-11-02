@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>ElevatorSimulation</RootNamespace>
+    <AssemblyName>ElevatorSimulation</AssemblyName>
+    <!-- The Access (ACE) driver must have the same bitness as this app.
+         AnyCPU = 64-bit on 64-bit Windows. If you only have 32-bit Office / 32-bit ACE,
+         change this to x86 (see README). -->
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- System.Data contains System.Data.OleDb (used for Microsoft Access). -->
+    <Reference Include="System.Data" />
+  </ItemGroup>
+
+</Project>
